@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HaloHalo Menus</title>
+    <link rel="shortcut icon" href="resource/css/img/icon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/b25cc54810.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="resource/css/gal.css">
+</head>
+<body>
+     <header class="hero-nav">
+        <!---Nav container-->
+            <div class="cont1">
+                <!---Navigation Bar-->
+                <div class="navbar">
+                    <div class="logo">
+                        <h1>Iroiromono</h1>
+                    </div>
+
+                    <div class="pages">
+                        <a href="index.html">Home</a>
+                        <a href="index.html">About Jerome</a>
+                        <a href="index.html">About Neil</a>
+                        <a href="product_feature.html">Feature Meals</a>
+                        <a href="product_gallery.html">Menu</a>
+                    </div>
+                </div>
+
+                <div class="herobox">
+                    <h1 class="herogreet">
+                        Menu
+                    </h1>
+                </div>
+            </div>
+    </header>
+
+    <section class="products">
+    <div class="item">
+        <img src="resource/css/img/feat2.jpg" alt="">
+        <h4>Adobo</h4>
+        <p class="descitm">Tender pork stewed in soy sauce, vinegar, garlic, and spices — a true Filipino classic.</p>
+        <p class="price">Price: ₱220</p>
+        <div class="buttongrp">
+            <button id="add" onclick="addItem()"><i class="fa-solid fa-cart-plus"></i></button>
+            <button class="Remove" id="remove" onclick="removeItem()"><i class="fa-solid fa-trash"></i></button>
+        </div>
+    </div>
+    <div class="item">
+        <img src="resource/css/img/feat3.jpg" alt="">
+        <h4>Sinigang</h4>
+        <p class="descitm">A comforting sour soup made with tamarind, vegetables, and tender pork.</p>
+        <p class="price">Price: ₱200</p>
+        <div class="buttongrp">
+            <button id="add" onclick="addItem()"><i class="fa-solid fa-cart-plus"></i></button>
+            <button class="Remove" id="remove" onclick="removeItem()"><i class="fa-solid fa-trash"></i></button>
+        </div>
+    </div>
+    <div class="item">
+        <img src="resource/css/img/prod1.jpg" alt="">
+        <h4>Lechon Kawali</h4>
+        <p class="descitm">Crispy deep-fried pork belly with golden skin and juicy meat.</p>
+        <p class="price">Price: ₱180</p>
+        <div class="buttongrp">
+            <button id="add" onclick="addItem()"><i class="fa-solid fa-cart-plus"></i></button>
+            <button class="Remove" id="remove" onclick="removeItem()"><i class="fa-solid fa-trash"></i></button>
+        </div>
+    </div>
+    <div class="item">
+        <img src="resource/css/img/prod2.jpg" alt="">
+        <h4>Bicol Express</h4>
+        <p class="descitm">Pork cooked in creamy coconut milk, chili, and shrimp paste — spicy and rich.</p>
+        <p class="price">Price: ₱250</p>
+        <div class="buttongrp">
+            <button id="add" onclick="addItem()"><i class="fa-solid fa-cart-plus"></i></button>
+            <button class="Remove" id="remove" onclick="removeItem()"><i class="fa-solid fa-trash"></i></button>
+        </div>
+    </div>
+    <div class="item">
+        <img src="resource/css/img/prod3.jpg" alt="">
+        <h4>Empanada</h4>
+        <p class="descitm">Golden fried pastry filled with longganisa, egg, and fresh vegetables.</p>
+        <p class="price">Price: ₱70</p>
+        <div class="buttongrp">
+            <button id="add" onclick="addItem()"><i class="fa-solid fa-cart-plus"></i></button>
+            <button class="Remove" id="remove" onclick="removeItem()"><i class="fa-solid fa-trash"></i></button>
+        </div>
+    </div>
+    <div class="item">
+        <img src="resource/css/img/prod4.jpg" alt="">
+        <h4>Buko Pie</h4>
+        <p class="descitm">Sweet and creamy young coconut pie baked in a flaky crust.</p>
+        <p class="price">Price: ₱350</p>
+        <div class="buttongrp">
+            <button id="add" onclick="addItem()"><i class="fa-solid fa-cart-plus"></i></button>
+            <button class="Remove" id="remove" onclick="removeItem()"><i class="fa-solid fa-trash"></i></button>
+        </div>
+    </div>
+    <div class="item">
+        <img src="resource/css/img/pro5.jpg" alt="">
+        <h4>Bulalo na may Sabaw</h4>
+        <p class="descitm">Beef shank simmered for hours, served with bone marrow and vegetables in broth.</p>
+        <p class="price">Price: ₱280</p>
+        <div class="buttongrp">
+            <button id="add" onclick="addItem()"><i class="fa-solid fa-cart-plus"></i></button>
+            <button class="Remove" id="remove" onclick="removeItem()"><i class="fa-solid fa-trash"></i></button>
+        </div>
+    </div>
+    <div class="item">
+        <img src="resource/css/img/prod6.jpg" alt="">
+        <h4>Kaldereta</h4>
+        <p class="descitm">Beef stew simmered in tomato sauce with potatoes, carrots, and bell peppers.</p>
+        <p class="price">Price: ₱260</p>
+        <div class="buttongrp">
+            <button id="add" onclick="addItem()"><i class="fa-solid fa-cart-plus"></i></button>
+            <button class="Remove" id="remove" onclick="removeItem()"><i class="fa-solid fa-trash"></i></button>
+        </div>
+    </div>
+    <div class="item">
+        <img src="resource/css/img/prod7.jpg" alt="">
+        <h4>Pancit Bihon</h4>
+        <p class="descitm">Stir-fried rice noodles with pork, shrimp, and vegetables.</p>
+        <p class="price">Price: ₱150</p>
+        <div class="buttongrp">
+            <button id="add" onclick="addItem()"><i class="fa-solid fa-cart-plus"></i></button>
+            <button class="Remove" id="remove" onclick="removeItem()"><i class="fa-solid fa-trash"></i></button>
+        </div>
+    </div>
+    <div class="item">
+        <img src="resource/css/img/prod8.jpg" alt="">
+        <h4>Crispy Pata</h4>
+        <p class="descitm">Deep-fried pork knuckle, crunchy on the outside and tender inside.</p>
+        <p class="price">Price: ₱480</p>
+        <div class="buttongrp">
+            <button id="add" onclick="addItem()"><i class="fa-solid fa-cart-plus"></i></button>
+            <button class="Remove" id="remove" onclick="removeItem()"><i class="fa-solid fa-trash"></i></button>
+        </div>
+    </div>
+    <div class="item">
+        <img src="resource/css/img/prod9.jpg" alt="">
+        <h4>Kare-Kare</h4>
+        <p class="descitm">Peanut-based stew with oxtail, vegetables, and bagoong on the side.</p>
+        <p class="price">Price: ₱320</p>
+        <div class="buttongrp">
+            <button id="add" onclick="addItem()"><i class="fa-solid fa-cart-plus"></i></button>
+            <button class="Remove" id="remove" onclick="removeItem()"><i class="fa-solid fa-trash"></i></button>
+        </div>
+    </div>
+    <div class="item">
+        <img src="resource/css/img/prod10.jpg" alt="">
+        <h4>Fresh Lumpia</h4>
+        <p class="descitm">Fresh spring rolls filled with sautéed vegetables and peanuts, wrapped in a soft crepe.</p>
+        <p class="price">Price: ₱120</p>
+        <div class="buttongrp">
+            <button id="add" onclick="addItem()"><i class="fa-solid fa-cart-plus"></i></button>
+            <button class="Remove" id="remove" onclick="removeItem()"><i class="fa-solid fa-trash"></i></button>
+        </div>
+    </div>   
+</section>
+    <footer class="foot">
+    <div class="footer-container">
+        <div class="footer-section contact-form">
+            <h2>Contact Us 📧</h2>
+            <form action="#">
+                <input type="text" name="name" class="text-input" placeholder="Your Name" required>
+                <input type="email" name="email" class="text-input" placeholder="Your Email Address" required>
+                <textarea name="message" class="text-input" placeholder="Your Message   " required></textarea>
+                <button type="submit" class="btn">
+                    <i class="fas fa-paper-plane"></i> Send
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        &copy; 2025 Iroiromono Resto | Developed by Jerome V. Giray and Neil O'Brein Ocampo
+    </div>
+</footer>
+
+<script src="resource/js/script2.js"></script>
+</body>
+</html>

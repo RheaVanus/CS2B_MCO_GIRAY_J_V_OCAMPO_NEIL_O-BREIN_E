@@ -1,0 +1,354 @@
+/* ===== GLOBAL RESET ===== */
+*{
+    margin: 0;                 /* Remove default spacing around elements */
+    padding: 0;                /* Remove default padding inside elements */
+    box-sizing: border-box;    /* Includes border & padding inside width/height */
+    text-decoration: none;     /* Removes underlines from links */
+}
+
+body{
+    font-family: Arial, sans-serif; /* Sets clean font style */
+    background-color: #F5F5F5;      /* Light grey background for whole page */
+}
+
+/* ===== HERO / HEADER SECTION ===== */
+.hero-nav{
+    width: 100%;  /* Full width of screen */
+    background: linear-gradient(rgba(0, 0, 0, 0.5)), url(img/backgroud.jpg);
+    /* Dark transparent overlay + background image */
+    background-size: cover;      /* Make background image cover whole area */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat;/* Prevent image from repeating */
+    padding: 32px;               /* Space inside header */
+}
+
+.cont1{
+    max-width: 1140px; /* Limit content width */
+    margin: 0 auto;    /* Center horizontally */
+}
+
+/* Navigation bar */
+.navbar{
+    display: flex;                 /* Use flexbox for horizontal layout */
+    justify-content: space-between;/* Space between logo & menu */
+    margin-bottom: 100px;          /* Push hero text down */
+}
+.logo{
+    color: white; /* White text for logo */
+}
+
+/* Navigation links */
+.navbar .pages a{
+    color: white;
+    margin-left: 20px;
+    font-size: 18px;
+    transition: 0.4s;         /* Smooth hover animation */
+    letter-spacing: 0.5px;    /* Slight space between letters */
+}
+.navbar .pages a:hover{
+    border-bottom: 2px solid white; /* White underline on hover */
+    padding-bottom: 10px;
+}
+
+/* Hero text box */
+.herobox {
+    width: 50%;        /* Takes half screen */
+    margin-top: 200px; /* Push it down vertically */
+}
+
+.herobox .herogreet{
+    color: white;
+    font-size: 50px;
+    line-height: 65px; /* Line spacing */
+}
+
+.herobox .herodesc{
+    color: white;
+    font-size: 18px;
+    line-height: 27px;
+    padding: 30px 0; /* Space above/below paragraph */
+}
+
+.herobox .herobtn{
+    margin-top: 60px; /* Push buttons down */
+}
+
+.herobox .btnbtn{
+    background-color: white;   /* White button */
+    margin-right: 30px;        /* Space between buttons */
+    padding: 15px 40px;        /* Bigger button size */
+    border-radius: 50px;       /* Rounded pill shape */
+    color: #2c2e2e ;
+}
+
+/* Button hover effects */
+.herobox .learn:hover{
+    background-color: black;
+    color: white;
+}
+.herobox .men:hover{
+    background-color: white;
+    color: black;
+}
+.herobox .men{
+    background: transparent;   /* Transparent look */
+    border: 1px solid white;   /* White border */
+}
+
+/* ===== FEATURE SECTION ===== */
+.cont2{
+    display: grid; /* Use CSS grid layout */
+    grid-template-columns: repeat(8, 1fr);        /* 8 equal columns */
+    grid-template-rows: repeat(4, minmax(150px, auto)); /* 4 rows */
+    grid-gap: 10px;   /* Space between grid items */
+    max-width: 1840px;
+    margin: 0 auto;
+}
+
+.feat1{
+    grid-column: 3/5;  /* Spans across column 3 to 5 */
+    margin-left: 30px;
+}
+.feat1 img{
+    margin-top: 50px;
+    border-radius: 50px; /* Rounded corners */
+    width: 200%;         /* Image stretched */
+}
+
+/* Box with text about HaloHalo */
+.feat-desc{
+    width: 100%;
+    grid-column: 2/8;
+    background-color: white;
+    padding: 50px;
+    border-radius: 40px;
+}
+.feat-desc h1{
+    text-align: center;
+}
+.feat-desc p{
+    text-align: center;
+    margin: 40px 30px 0px 30px;
+    font-size: 20px;
+}
+
+/* Another feature box */
+.heeds{
+    grid-column: 2/8;
+    background-color: white;
+    padding: 50px;
+    border-radius: 40px;
+    margin-bottom: 50px;
+}
+.heeds h1{
+    text-align: center ;
+}
+
+/* Feature #2 (Adobo) */
+.feat2{
+    grid-column: 2/8;
+    background-color: white;
+    padding: 50px;
+    border-radius: 50px;
+}
+.feat2 img{
+    width: 90%;
+    margin-left: 50px;
+    border-radius: 50px;
+}
+.feat2 h1{
+    text-align: center;
+    padding: 30px;
+}
+.feat2 p{
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Right image */
+.feat3{
+    grid-column: 1/4;
+}
+.feat3 img{
+    width: 100%;
+    border-radius: 50px;
+    margin-left: 80px;
+}
+
+/* Feature #3 (Sinigang) */
+.dess{
+    grid-column: 4/8;
+    background-color: white;
+    padding: 20px;
+    border-radius: 50px;
+    margin-left: 100px;
+}
+.dess h1{
+    margin-top: 50px;
+    text-align: center;
+}
+.dess p{
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-size: 20px;
+    text-align: justify;
+    line-height: 30px;
+}
+
+/* Order buttons */
+.order{
+    background-color: black;
+    margin-left: 230px;
+    padding: 15px 40px;
+    border-radius: 50px;
+    color: white ;
+}
+.order2{
+    background-color: black;
+    margin-left: 430px;
+    padding: 15px 40px;
+    border-radius: 50px;
+    color: white ;
+}
+.order:hover, .order2:hover{
+    background-color: gray;
+    color: white;
+}
+
+/* ===== FOOTER ===== */
+.foot {
+    background: black;
+    color: white;
+    padding: 2rem 1rem 0 1rem; /* Space inside footer */
+    position: relative;
+    margin-top: 20px;
+}
+.footer-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+.footer-section h2 {
+    margin-bottom: 1.2rem;
+    font-size: 1.5rem;
+    text-align: center;
+}
+.contact-form .text-input {
+    display: block;
+    width: 100%;
+    padding: 13px;
+    margin-bottom: 16px;
+    border-radius: 10px;
+    border: 3px solid #555;
+    background: black;
+    color: white;
+    font-family: inherit;
+}
+.contact-form .btn {
+    background: white;
+    color: black;
+    border: none;
+    padding: 13px 24px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    width: 100%;
+}
+.contact-form .btn:hover {
+    background: grey;
+    color: white;
+}
+.footer-bottom {
+    text-align: center;
+    padding: 16px;
+    margin-top: 32px;
+    font-size: 15px;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+/* Tablet & small screens */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;  /* Stack items vertically */
+    align-items: center;
+    text-align: center;
+  }
+  .navbar .pages {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .navbar .pages a {
+    font-size: 20px;
+  }
+  .herobox {
+    width: 100%;
+    margin-top: 100px;
+    text-align: center;
+  }
+  .herobox .herogreet {
+    font-size: 36px;
+    line-height: 48px;
+  }
+  .herobox .herodesc {
+    font-size: 16px;
+    padding: 20px 0;
+  }
+  .herobox .btnbtn {
+    display: block;
+    margin: 15px auto;
+    padding: 12px 30px;
+    width: 80%;
+    text-align: center;
+  }
+  .cont2 {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    padding: 0 20px;
+  }
+  .feat1, .feat2, .feat3, .feat-desc, .dess {
+    grid-column: 1 / -1;
+    margin: 0;
+    padding: 20px;
+  }
+  .feat1 img, .feat2 img, .feat3 img {
+    width: 100%;
+    margin: 0;
+  }
+  .feat-desc p, .feat2 p, .dess p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .dess .order {
+    margin: 30px auto 0 auto;
+    display: block;
+    width: 80%;
+    text-align: center;
+  }
+  .footer-container {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .contact-form .btn {
+    width: 100%;
+  }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+  .herobox .herogreet {
+    font-size: 28px;
+    line-height: 40px;
+  }
+  .herobox .herodesc {
+    font-size: 14px;
+  }
+  .navbar .pages a {
+    font-size: 18px;
+  }
+  .contact-form .text-input {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,221 @@
+/* ========== RESET & BASE STYLES ========== */
+* {
+    margin: 0; /* Removes default browser margins */
+    padding: 0; /* Removes default browser padding */
+    box-sizing: border-box; /* Ensures padding/border don’t increase element’s size */
+    text-decoration: none; /* Removes underlines on links */
+}
+body {
+    font-family: Arial, sans-serif; /* Sets clean default font */
+    background-color: #F5F5F5; /* Light gray background */
+}
+
+/* ========== HERO / HEADER ========== */
+.hero-nav {
+    width: 100%; /* Full width header */
+    background: linear-gradient(rgba(0, 0, 0, 0.5)), url(img/backgroud.jpg); /* Dark overlay on background image */
+    background-size: cover; /* Image covers entire container */
+    background-position: center; /* Center the background */
+    background-repeat: no-repeat; /* Prevent repeating */
+    padding: 32px; /* Space inside header */
+}
+.cont1 {
+    max-width: 1140px; /* Keeps content centered */
+    margin: 0 auto; /* Centers horizontally */
+}
+.navbar {
+    display: flex; /* Aligns logo + pages side by side */
+    justify-content: space-between; /* Space between logo and links */
+    margin-bottom: 100px; /* Pushes hero text lower */
+}
+.logo {
+    color: white; /* White text for logo */
+}
+.navbar .pages a {
+    color: white; /* White navigation links */
+    margin-left: 20px; /* Space between links */
+    font-size: 18px; /* Slightly bigger text */
+    transition: 0.4s; /* Smooth hover animation */
+    letter-spacing: 0.5px; /* Slight space between letters */
+}
+.navbar .pages a:hover {
+    border-bottom: 2px solid white; /* Underline effect on hover */
+    padding-bottom: 10px; /* Push link down slightly */
+}
+
+.herobox {
+    width: 50%; /* Box width */
+    margin-top: 200px; /* Push down from top */
+}
+.herobox .herogreet {
+    color: white; /* White text */
+    font-size: 50px; /* Large title */
+    line-height: 65px; /* Spacing between lines */
+    margin-left: 500px; /* Push text to the right */
+}
+
+/* ========== PRODUCTS GRID ========== */
+.products {
+    display: grid; /* Grid layout */
+    grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+    padding: 30px 20px; /* Spacing inside */
+    grid-column-gap: 20px; /* Space between columns */
+    grid-row-gap: 30px; /* Space between rows */
+}
+.price {
+    font-weight: bold; /* Bold price text */
+    text-align: center; /* Center align */
+    margin-top: 10px; /* Space above price */
+}
+.descitm {
+    text-align: justify; /* Align text both left and right */
+}
+.item {
+    display: flex; /* Flexible container */
+    flex-direction: column; /* Items stacked vertically */
+    justify-content: space-between; /* Space out content */
+    background: #fff; /* White card */
+    padding: 15px; /* Inner space */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow */
+    height: 100%; /* Full height */
+}
+.item img {
+    width: 100%; /* Full width */
+    height: 300px; /* Fixed height */
+    object-fit: cover; /* Crop without stretching */
+    cursor: pointer; /* Pointer on hover */
+    transform: 0.2s ease; /* Transition for hover effect */
+    border-radius: 20px; /* Rounded image */
+}
+.item img:hover {
+    transform: scale(1.04); /* Zoom effect */
+}
+.item h4 {
+    padding: 5px; /* Space around title */
+    text-align: center; /* Center text */
+}
+
+/* Buttons */
+.buttongrp {
+    display: flex; /* Aligns buttons in a row */
+    gap: 10px; /* Space between buttons */
+    justify-content: center; /* Center the buttons */
+    margin-top: 10px; /* Space above buttons */
+}
+.buttongrp button {
+    flex: 1; /* Equal width for buttons */
+    padding: 8px 15px; /* Inner space */
+    border: none; /* Remove border */
+    border-radius: 8px; /* Rounded corners */
+    font-size: 16px; /* Button text size */
+    cursor: pointer; /* Pointer cursor */
+    background-color: green; /* Default green button */
+    color: white; /* White text */
+}
+.buttongrp button:hover {
+    transform: scale(1.08); /* Button grows slightly */
+}
+.remove {
+    background-color: red; /* Red for remove button */
+}
+
+/* ========== FOOTER ========== */
+.foot {
+    background: black; /* Black footer */
+    color: white; /* White text */
+    padding: 2rem 1rem 0 1rem; /* Padding */
+    position: relative; /* Positioned relative */
+    margin-top: 20px; /* Space above footer */
+}
+.footer-container {
+    max-width: 600px; /* Limit width */
+    margin: 0 auto; /* Center footer */
+}
+.footer-section h2 {
+    margin-bottom: 1.2rem; /* Space below heading */
+    font-size: 1.5rem; /* Bigger text */
+    text-align: center; /* Center text */
+}
+.contact-form .text-input {
+    display: block; /* Full width */
+    width: 100%;
+    padding: 13px; /* Inner padding */
+    margin-bottom: 16px; /* Space between inputs */
+    border-radius: 10px; /* Rounded inputs */
+    border: 3px solid #555; /* Dark gray border */
+    background: black; /* Black background */
+    color: white; /* White text */
+    font-family: inherit; /* Same font as body */
+}
+.contact-form .btn {
+    background: white; /* White button */
+    color: black; /* Black text */
+    border: none; /* No border */
+    padding: 13px 24px; /* Inner padding */
+    font-size: 18px; /* Button text size */
+    border-radius: 10px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    transition: background 0.3s ease; /* Smooth hover */
+    width: 100%; /* Full width button */
+}
+.contact-form .btn:hover {
+    background: grey; /* Turns gray on hover */
+    color: white; /* Text turns white */
+}
+.footer-bottom {
+    text-align: center; /* Center text */
+    padding: 16px; /* Inner padding */
+    margin-top: 32px; /* Space above */
+    font-size: 15px; /* Slightly smaller text */
+}
+
+/* ========== RESPONSIVE DESIGN ========== */
+
+/* Tablets (screen width 1024px and smaller) */
+@media (max-width: 1024px) {
+    .products {
+        grid-template-columns: repeat(2, 1fr); /* Switch to 2 columns */
+    }
+    .herobox .herogreet {
+        font-size: 40px; /* Smaller text */
+        margin-left: 0; /* Remove big left margin */
+        text-align: center; /* Centered title */
+    }
+}
+
+/* Phones (screen width 768px and smaller) */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Stack nav vertically */
+        align-items: center; /* Center items */
+    }
+    .navbar .pages {
+        margin-top: 15px; /* Space above nav links */
+    }
+    .products {
+        grid-template-columns: 1fr; /* Single column */
+    }
+    .herobox {
+        width: 100%; /* Full width */
+        margin-top: 100px; /* Less top margin */
+        text-align: center; /* Centered */
+    }
+    .herobox .herogreet {
+        font-size: 32px; /* Smaller font */
+        line-height: 45px; /* Less spacing */
+    }
+    .item img {
+        height: 220px; /* Smaller images */
+    }
+    .buttongrp button {
+        font-size: 14px; /* Smaller text */
+        padding: 6px 10px; /* Smaller buttons */
+    }
+    .footer-section h2 {
+        font-size: 1.2rem; /* Smaller footer heading */
+    }
+    .footer-bottom {
+        font-size: 13px; /* Smaller footer text */
+    }
+}
